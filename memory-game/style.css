@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    font-size: 3rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+}
+
+.card {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background: url(./images/blank.png);
+    cursor: pointer;
+}

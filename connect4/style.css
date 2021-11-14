@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-of-circle: red;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    border: 1px solid black;
+    background-color: blue;
+    position: relative;
+}
+
+.kostka {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.selected::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-of-circle);
+    position: absolute;
+    top: -55px;
+}
+
+#who-win {
+    visibility: hidden;
+    font-size: 3rem;
+    color: white;
+}
